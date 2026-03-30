@@ -62,7 +62,7 @@ td {
 
 #div-in-form, main.jumbotron {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     flex-wrap: wrap;
 }
@@ -78,22 +78,23 @@ td {
 
 #div-with-a {
     border: 1px solid lightskyblue;
+    background-color: lightskyblue;
     border-radius: 3px;
-    margin: 1.25%;
+    margin-top: 1rem;
     padding: 0.25rem;
 }
 
-#div-with-a:hover {
-    background-color: lightskyblue;
-}
-
 #div-with-a>* {
-    color: lightskyblue;
+    color: white;
     text-decoration: none;
 }
 
+#div-with-a:hover {
+    background-color: white;
+}
+
 #div-with-a:hover>* {
-    color: white;
+    color: lightskyblue;
 }
 
 .jumbotron {
