@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    font-size: 1rem;
+    display: flex;
+}
+
+main {
+   width: 75%;
+}
+
+aside {
+    width:300px;
+}
+aside *{
+    width: 100%;
+    display: inline;
+}
+
+.col {
+    width: 47.5%;
+    display: block;
+    text-align: left;
+}
+
+.col>* {
+    display: block;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-none {       /* THIS CLASS DOES NOT EXIST */
+    display: none !important;
+}
+
+#game-area {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    max-width: 450px;
+    min-width: 450px;
+}
+
+td {
+    font-size: 50px;
+    border: solid 1px darkgray;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+}
+
+#div-in-form, main.jumbotron {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#div-in-form {
+    border: solid 1px darkslategray;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 5px 5px 15px #00000088;
+}
+
+#div-with-a {
+    border: 1px solid lightskyblue;
+    border-radius: 3px;
+    margin: 1.25%;
+    padding: 0.25rem;
+}
+
+#div-with-a:hover {
+    background-color: lightskyblue;
+}
+
+#div-with-a>* {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+#div-with-a:hover>* {
+    color: white;
+}
+
+.jumbotron {
+    background-color: #DEDEDE;
+    padding: 1.5rem;
+    border-radius: 0.3rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 1181px) {
+    main {
+        width: 65%;
+    }
+
+    aside {
+        width: 25%;
+    }
+
+    table {
+        max-width: 300px;
+        min-width: 300px;
+    }
+
+    td {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .col {
+        width: 100%;
+    }
+}
+
+@media (max-width: 512px) {
+    aside {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+    }
+}
