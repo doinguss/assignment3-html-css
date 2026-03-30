@@ -63,7 +63,6 @@ td {
 #div-in-form, main.jumbotron {
     display: flex;
     justify-content: space-between;
-    text-align: center;
     flex-wrap: wrap;
 }
 
